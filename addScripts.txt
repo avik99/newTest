@@ -1,0 +1,60 @@
+﻿
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+
+<!-- SDK Script files -->
+    <script>
+        var rndNum = Math.random().toString(36).substring(7);
+    </script>
+    <script src="sdk/sdkEndpointObj.js"></script>
+    <script src="sdk/sdkEventsObject.js"></script>
+    <script src="sdk/sdkGlobals.js"></script>
+    <script src="sdk/sdkChat.js"></script>
+    <script src="sdk/sdkDevices.js"></script>
+    <script src="sdk/sdkFileTransfer.js"></script>
+    <script src="sdk/sdkRooms.js"></script>
+    <script src="sdk/sdkWebRTC.js"></script>
+    <script src="sdk/sdkRecording.js"></script>
+    <script src="sdk/sdkSocket.js"></script>
+    <script src="sdk/sdkCoBrowsing.js"></script>
+
+<!-- SDK Internal Script files -->
+    <script src="sdk/intChat.js"></script>
+    <script src="sdk/intDevices.js"></script>
+    <script src="sdk/intFileTransfer.js"></script>
+    <script src="sdk/intRooms.js"></script>
+<!--    <script src="sdk/intWebRTC.js"></script>-->
+    <script src="sdk/intWebRTC3.js"></script>
+    <script src="sdk/intRecording.js"></script>
+    <script src="sdk/intSocket.js"></script>
+    <script src="sdk/intUtils.js"></script>
+    <script src="sdk/utils/DetectRTC.js"></script>
+    <script src="sdk/intCoBrowsing.js"></script>
+    <script src="sdk/intEndpoints.js"></script>
+
+
+
+
+<!-- Application Script files -->
+    <script src="js/globals.js"></script>
+    <script src="js/operation.js"></script>
+    <script src="js/ui.js"></script>
+
+    <script type="text/javascript">
+        var serverURL = '';
+        var serverPort = '443';
+        var version = '0.1.3';
+        window.onload = function () {
+        console.log('window onload');
+        oReadyStateTimer = setInterval(function () {
+                        if (document.readyState === "complete") {
+                           clearInterval(oReadyStateTimer);
+                           startTheApp();
+                        }
+                    },
+                    500);
+        }
+    </script>
